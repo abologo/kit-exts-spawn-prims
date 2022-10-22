@@ -37,6 +37,11 @@ class MyExtension(omni.ext.IExt):
                 with ui.VStack():
                     ui.Button("Spawn a cube", clicked_fn=lambda: on_click("Cube"))
                     ui.Button("Spawn a cone", clicked_fn=lambda: on_click("Cone"))
+                    ui.Button("Spawn Cylinder", clicked_fn=lambda: on_click("Cylinder"))
+                    ui.Button("Spawn Disk", clicked_fn=lambda: on_click("Disk"))
+                    ui.Button("Spawn Plane", clicked_fn=lambda: on_click("Plane"))
+                    ui.Button("Spawn Sphere", clicked_fn=lambda: on_click("Sphere"))
+                    ui.Button("Spawn Torus", clicked_fn=lambda: on_click("Torus"))
                     
     def on_shutdown(self):
         print("[omniexample.spawn_prims] MyExtension shutdown")
